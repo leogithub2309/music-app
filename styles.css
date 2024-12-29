@@ -1,0 +1,134 @@
+:root{
+    --primary-color:  #C93B76;
+    --second-color: #212936;
+    --third-color: #4D5562;
+    --text-white: #E5E7EB;
+    --gray-color: #121826a6;
+}
+@font-face {
+    font-family: 'Inter Italic';
+    src: url('./Inter-Italic-VariableFont_opsz\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter VariableFont';
+    src: url('./Inter-VariableFont_opsz\,wght.ttf');
+}
+
+html{
+    font-family: 'Inter Italic';
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-image: url('./dccl--javascript-music-player/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.music-box{
+    background-color: var(--gray-color);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 1.4rem;
+    width: 100%;
+    max-width: 380px;
+    min-height: 60vh;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.title-sound{
+    color: var(--text-white);
+    font-size: 1.1rem;
+    margin: 12px 0 4px;
+    font-weight: 500;
+    font-family: 'Inter VariableFont';
+}
+
+.artist{
+    font-family: 'Inter VariableFont';
+    font-weight: 500;
+    font-size: .75rem;
+    color: var(--third-color);
+    margin: 0 0 2rem;
+}
+
+#time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#time > p{
+    color: var(--third-color);
+    font-size: 0.625rem;
+    margin: 0;
+}
+
+#time span#max-time{
+    text-align: right !important;
+}
+
+
+#progress-bar{
+    background-color: var(--text-white);
+    width:100%;
+    height: 0.325rem;
+    border-radius: 0.75rem;
+    margin: .546rem 0;
+    cursor: pointer;
+}
+
+#progress-bar  #progress{
+    width: 0px;
+    height: inherit;
+    background-color: var(--primary-color);
+    border-radius: 0.75rem;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+#nav button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#nav button > * {
+    pointer-events: none; 
+    user-select: none; 
+    border-radius: 2rem;
+    width: 2.8rem;
+}

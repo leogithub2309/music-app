@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="music-box">
+        <img src="./dccl--javascript-music-player/cover-1.png" alt="Cover 1" class="img-fluid">
+        <h1 class="title-sound">Lost in the City Ligths</h1>
+        <p class="artist">Cosmos Sheldrake</p>
+        <section id="time">
+            <p id="progress-time">00:00</p>
+            <p id="max-time">03:25</span>
+        </section>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <audio src="./dccl--javascript-music-player/lost-in-city-lights-145038.mp3" id="song"></audio>
+        <nav id="nav">
+            <button id="prev">
+                <img src="./dccl--javascript-music-player/Stop_and_play_fill-1.svg" alt="prev">
+            </button>
+            <button id="btn-action">
+                <img src="./dccl--javascript-music-player/Play_fill.svg" alt="Button" style="background-color: var(--primary-color);">
+            </button>
+            <button id="next">
+                <img src="./dccl--javascript-music-player/Stop_and_play_fill.svg" alt="next">
+            </button>
+        </nav>
+    </div>
+
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
