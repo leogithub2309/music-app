@@ -1,4 +1,4 @@
-    const d = document;
+const d = document;
 
 const $video = d.getElementById('song'),
     $btnPlay = d.getElementById('btn-action'),
